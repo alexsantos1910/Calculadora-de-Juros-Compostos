@@ -1,0 +1,15 @@
+@charset "UFT-8";
+
+:root {
+    --cor01: #D9AF62; 
+    --cor02: #8C7A58;
+    --cor03: #403829;
+    --cor04: #F2E9D8;
+    --cor05: #D9BC9A;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+

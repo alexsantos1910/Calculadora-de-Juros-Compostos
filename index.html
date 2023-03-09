@@ -5,16 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Corretoras</a>
     </header>
     <body>
         <h1>Calculadora de Juros Compostos</h1>
+        <p>Os juros compostos crescem de forma exponencial, pois sua base de cálculo é sempre em cima do montante anterior. Faça esse cálculo financeiro de forma simples utilizando nossa calculadora!</p>
+        <div id="conteine">
+            <h2>Simulador de Juros Compostos</h2>
+            <div id="id-valor-inicial">
+                <h4>Valor Inicial</h4>
+                <span>R$</span>
+                <input type="text" size="40px" name="Valor Incial" value="00,00"> 
+            </div>
+            <div id="id-valor-mensal">
+                <h4>Valor Mensal</h4>
+                <span>R$</span>
+                <input type="text" size="40px" name="Valor Mensal" value="00,00"> 
+            </div>
+            <div id="id-taxa-juros">
+                <h4>Taxa de Juros</h4>
+                <span>%</span>
+                <input type="text" size="40px" name="Taxa de Juros" value="6,50"> 
+                <select name="taxa-juros" id="id-select-taxa-juros-">anual</select>
+            </div>
+            <div id-periodo>
+                <h4>periodo</h4>
+                <input type="number" size="40px" name="Periodo" value="1" min="1">
+                <select name="periodo-unidade" id="id-select-periodo"></select>
+            </div>
+            <div id="id-button-calcular">
+                <input type="button" value="Calcular">
+            </div>
+        </div>
     </body>
     <footer>
 
     </footer>
 </body>
+
 </html>
