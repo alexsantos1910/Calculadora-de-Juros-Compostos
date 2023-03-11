@@ -18,33 +18,31 @@
     <main>
         <h1>Calculadora de Juros Compostos</h1>
         <p>Os juros compostos crescem de forma exponencial, pois sua base de cálculo é sempre em cima do montante anterior. Faça esse cálculo financeiro de forma simples utilizando nossa calculadora!</p>
-        <div id="container">
-            <h2>Simulador de Juros Compostos</h2>
+        <div id="container"> 
             <div id="id-valor-inicial" >
-                <h4>Valor Inicial</h4>
+                <label for="valor inicial"><span class="font-label">valor inicial</span></label>
                 <span class="simbolos"><p>R$</p></span>
-                <input type="text" size="40px" name="Valor Incial" value="00,00" class="class-inputs"> 
+                <input type="text" size="40px" name="Valor Incial" class="class-inputs" placeholder="00,00"> 
             </div>
             <div id="id-valor-mensal" >
-                <h4>Valor Mensal</h4>
+                <label for="valor mensal"><span class="font-label">valor mensal</span></label>
                 <span class="simbolos"><p>R$</p></span>
-                <input type="text" size="40px" name="Valor Mensal" value="00,00" class="class-inputs"> 
+                <input type="text" size="40px" name="Valor Mensal" class="class-inputs" placeholder="00,00"> 
             </div>
             <div id="id-taxa-juros">
-                <h4>Taxa de Juros</h4>
+                <label for="taxa-juros"><span class="font-label">Taxa de juros</span></label>
                 <span class="simbolos"><p>%</p></span>
                 <input type="text" size="40px" name="Taxa de Juros" value="6,50" class="class-inputs"> 
-                <select name="taxa-juros" id="id-select-taxa-juros-">anual</select>
-                <select name="taxa-juros" id="id-select-taxa-juros-">mensal</select>
+                <select name="taxa-juros" id="id-select-taxa-juros-"><option value="anual">anual</option><option value="mensal">mensal</option></select> 
             </div>
             <div id="id-periodo" >
-                <h4>periodo</h4>
+                <label for="periodo"><span class="font-label">periodo</span></label>
                 <input type="number" size="40px" name="Periodo" value="1" min="1" class="class-inputs">
-                <select name="periodo-unidade" id="id-select-periodo"></select>
+                <select name="periodo-unidade" id="id-select-periodo"><option value="anual">anual</option><option value="mensal">mensal</option></select>
             </div>
-            <div id="id-button-calcular">
-                <input type="button" value="Calcular">
-            </div>
+        </div>
+        <div id="id-button-calcular">
+            <input type="button" value="Calcular">
         </div>
     </main>
     <footer>
