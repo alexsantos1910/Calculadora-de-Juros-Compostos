@@ -19,25 +19,26 @@
         <h1>Calculadora de Juros Compostos</h1>
         <p>Os juros compostos crescem de forma exponencial, pois sua base de cálculo é sempre em cima do montante anterior. Faça esse cálculo financeiro de forma simples utilizando nossa calculadora!</p>
         <div id="container"> 
-            <div id="id-valor-inicial" >
-                <label for="valor inicial"><span class="font-label">valor inicial</span></label>
-                <span class="simbolos"><p>R$</p></span>
-                <input type="text" size="40px" name="Valor Incial" class="class-inputs" placeholder="00,00"> 
+            <div>
+                <label for="valor inicial">valor inicial</label>
+                <span class="simbolos">R$</span>
+                <input type="text" size="40px" name="Valor Incial" class="class-inputs" placeholder="00,00" id="id-valor-inicial"> 
             </div>
-            <div id="id-valor-mensal" >
-                <label for="valor mensal"><span class="font-label">valor mensal</span></label>
-                <span class="simbolos"><p>R$</p></span>
-                <input type="text" size="40px" name="Valor Mensal" class="class-inputs" placeholder="00,00"> 
+            <div>
+                <label for="valor mensal">valor mensal</label>
+                <span class="simbolos">R$</span>
+                <input type="text" size="40px" name="Valor Mensal" class="class-inputs" placeholder="00,00" id="id-valor-mensal"> 
             </div>
-            <div id="id-taxa-juros">
-                <label for="taxa-juros"><span class="font-label">Taxa de juros</span></label>
-                <span class="simbolos"><p>%</p></span>
-                <input type="text" size="40px" name="Taxa de Juros" value="6,50" class="class-inputs"> 
+            <div >
+                <label for="taxa-juros">Taxa de juros</label>
+                <span class="simbolos">%</span>
+                <input type="text" size="40px" name="Taxa de Juros" value="6,50" class="class-inputs" id="id-taxa-juros"> 
                 <select name="taxa-juros" id="id-select-taxa-juros-"><option value="anual">anual</option><option value="mensal">mensal</option></select> 
             </div>
-            <div id="id-periodo" >
-                <label for="periodo"><span class="font-label">periodo</span></label>
-                <input type="number" size="40px" name="Periodo" value="1" min="1" class="class-inputs">
+            <div>
+                <label for="periodo">periodo</label>
+                <span  class="simbolos">%</span>
+                <input type="number" size="40px" name="Periodo" value="1" min="1" class="class-inputs" id="id-periodo" >
                 <select name="periodo-unidade" id="id-select-periodo"><option value="anual">anual</option><option value="mensal">mensal</option></select>
             </div>
         </div>
